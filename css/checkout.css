@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Inter;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+section.payment {
+    width: 60%;
+}
+
+section.cart {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+section.cart .product {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+section.cart .product figure {
+    width: 60%;
+    display: flex;
+    gap: 1rem;
+}
+
+section.cart .product figure img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 3px;
+    aspect-ratio: 1;
+}
+
+section.cart .product figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+section.cart .product figure figcaption h3 {}
+
+section.cart .product figure figcaption {}
+
+section.cart .product .actions {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    right: 0;
+}
+
+section.cart .product .actions button.delete {}
+
+section.cart .product .actions form {
+    display: flex;
+    gap: 0.5rem
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+section.cart .product .actions form input {
+    width: 2rem;
+
+    text-align: center;
+}
+
+section.cart .product .actions form button.increment,
+section.cart .product .actions form button.decrement {
+    display: inline-block;
+    width: 1.6rem;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

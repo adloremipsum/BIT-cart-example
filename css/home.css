@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Inter;
+}
+
+main {
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-list article.product {}
+
+.product-list article figure {}
+
+.product-list article figure img {
+    width: 100%
+}
+
+.product-list article figure figcaption {}
+
+.product-list article figure figcaption h2 {}
+
+.product-list article figure figcaption p {}
+
+.product-list article figure figcaption button {}
+
+.offcanvas {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+aside.cart {
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    right: 0;
+    top: 0;
+    background-color: white;
+}
+
+aside button.checkout {
+    width: 100%;
+    background: #1c64f2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    margin-top: 2rem;
+}
+
+section.cart-products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    margin-top: 2rem;
+}
+
+section.cart-products .product {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.cart-products .product figure {
+    width: 60%;
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-products .product figure img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 3px;
+    aspect-ratio: 1;
+}
+
+.cart-products .product figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.cart-products .product figure figcaption h3 {}
+
+.cart-products .product figure figcaption {}
+
+.cart-products .product .actions {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    right: 0;
+}
+
+.cart-products .product .actions button.delete {}
+
+.cart-products .product .actions form {
+    display: flex;
+    gap: 0.5rem
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.cart-products .product .actions form input {
+    width: 2rem;
+
+    text-align: center;
+}
+
+.cart-products .product .actions form button.increment,
+.cart-products .product .actions form button.decrement {
+    display: inline-block;
+    width: 1.6rem;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .details {}
+
+aside .details h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
